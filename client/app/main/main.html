@@ -36,7 +36,10 @@
     </div>
   </div>
 
-  <ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map>
+  <ui-gmap-google-map center="map.center" zoom="map.zoom" draggable="false" options="options" bounds="map.bounds">
+    <ui-gmap-polygon static="true" ng-repeat="p in polygons track by p.id" path="p.path" stroke="p.stroke" visible="p.visible"
+                     geodesic="p.geodesic" fill="p.fill" fit="false" editable="p.editable"></ui-gmap-polygon>
+  </ui-gmap-google-map>
 
   <div google-chart chart="chartObject" style="height:600px; width:100%;"></div>
 

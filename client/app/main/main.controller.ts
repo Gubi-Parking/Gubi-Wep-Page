@@ -9,7 +9,49 @@ class MainController {
     this.socket = socket;
     this.awesomeThings = [];
 
-    $scope.map = { center: { latitude: 45, longitude: -73 }, zoom: 8 };
+    $scope.map2 = {center: {latitude: 40.1451, longitude: -99.6680 }, zoom: 4, bounds: {}};
+    $scope.map = { center: { latitude: 20.734282, longitude: -103.454845 }, zoom: 17 bounds: {}};
+
+    $scope.polygons = [
+      {
+        id: 1,
+        path: [
+          {
+            latitude: 20.732064,
+            longitude: -103.454508
+          },
+          {
+            latitude: 20.732044,
+            longitude: -103.453982
+          },
+          {
+            latitude: 20.733258,
+            longitude: -103.453724
+          },
+          {
+            latitude: 20.733328,
+            longitude: -103.454390
+          }
+        ],
+        stroke: {
+          color: '#6060FB',
+          weight: 3
+        },
+        editable: true,
+        draggable: true,
+        geodesic: false,
+        visible: true,
+        fill: {
+          strokeColor: '#FF0000',
+          strokeOpacity: 0.8,
+          strokeWeight: 2,
+          fillColor: '#FF0000',
+          fillOpacity: 0.35,
+        }
+      }
+    ];
+
+    $scope.map = { center: { latitude: 20.734282, longitude: -103.454845 }, zoom: 17 };
 
     $scope.chartObject = {};
 
