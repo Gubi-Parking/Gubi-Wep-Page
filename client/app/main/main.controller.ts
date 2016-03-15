@@ -9,8 +9,10 @@ class MainController {
     this.socket = socket;
     this.awesomeThings = [];
 
-    $scope.chartObject.data = {"cols": [
-      {
+    $scope.chartObject = {};
+
+    $scope.chart =
+      [{
         "name": "Medicina",
         "timestamp": "",
         "available": "100",
@@ -79,9 +81,55 @@ class MainController {
           "available": "100",
           "total": 446,
           "used": "200"
-        }]};
+        }];
 
+    $scope.chartObject.type = "ColumnChart";
 
+    $scope.onions = [
+      {v: "Onions"},
+      {v: 3},
+    ];
+
+    $scope.medicina = [
+      {v: "Medicina"},
+      {v: 412},
+    ];
+    $scope.visitantes = [
+      {v: "visitantes"},
+      {v: 237},
+    ];
+    $scope.cafeteria = [
+      {v: "Cafeteria"},
+      {v: 288},
+    ];
+    $scope.aulas6 = [
+      {v: "Aulas vI/Residencias"},
+      {v: 230},
+    ];
+    $scope.aulas5 = [
+      {v: "Aulas v/Ingenieria Civil"},
+      {v: 291},
+    ];
+    $scope.za = [
+      {v: "Zona Azul"},
+      {v: 229},
+    ];
+    $scope.zv = [
+      {v: "Zona verde"},
+      {v: 270},
+    ];
+    $scope.zn = [
+      {v: "Zona Naranja"},
+      {v: 269},
+    ];
+    $scope.zam = [
+      {v: "Zona Amarilla"},
+      {v: 341},
+    ];
+    $scope.zm = [
+      {v: "Zona Morada"},
+      {v: 446},
+    ];
 
     $scope.onions = [
       {v: "Onions"},
@@ -90,31 +138,22 @@ class MainController {
 
     $scope.chartObject.data = {"cols": [
       {id: "t", label: "Topping", type: "string"},
-      {id: "s", label: "Slices", type: "number"}
+      {id: "s", label: "Total Spaces", type: "number"}
     ], "rows": [
-      {c: [
-        {v: "Mushrooms"},
-        {v: 3},
-      ]},
-      {c: $scope.onions},
-      {c: [
-        {v: "Olives"},
-        {v: 31}
-      ]},
-      {c: [
-        {v: "Zucchini"},
-        {v: 1},
-      ]},
-      {c: [
-        {v: "Pepperoni"},
-        {v: 2},
-      ]}
+      {c: $scope.medicina},
+      {c: $scope.visitantes},
+      {c: $scope.cafeteria },
+      {c: $scope.aulas6 },
+      {c: $scope.aulas5},
+      {c: $scope.za},
+      {c: $scope.zv},
+      {c: $scope.zn},
+      {c: $scope.zam},
+      {c: $scope.zm},
     ]};
 
-
-
     $scope.chartObject.options = {
-      'title': 'How Much Pizza I Ate Last Night'
+      'title': 'Available parking spaces'
     };
 
     $scope.$on('$destroy', function() {
