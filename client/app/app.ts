@@ -11,7 +11,8 @@ angular.module('gubiParkingApp', [
   'btford.socket-io',
   'ui.bootstrap',
   'validation.match',
-  'googlechart'
+  'googlechart',
+  'uiGmapgoogle-maps'
 ])
   .config(function($routeProvider, $locationProvider) {
     $routeProvider
