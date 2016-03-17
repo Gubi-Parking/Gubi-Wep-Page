@@ -1,59 +1,49 @@
-<!--<header class="hero-unit" id="banner">
-  <div class="container">
-    <h1>Hello world</h1>
-    <p class="lead">Kick-start your next web app with Angular Fullstack</p>
-    <img src="assets/images/yeoman.png" alt="I'm Yeoman">
-  </div>
-</header>
-
-<div class="container">
-  <div class="row">
-    <div class="col-lg-12">
-      <h1 class="page-header">Features:</h1>
-      <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="thing in $ctrl.awesomeThings">
-        <li><a href="#" uib-tooltip="{{thing.info}}">{{thing.name}}<button type="button" class="close" ng-click="$ctrl.deleteThing(thing)">&times;</button></a></li>
-      </ul>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  
+<div class="container-fluid" id="pills">
+    <div class="row">
+        <div class="col-md-2">
+            <ul class="nav nav-pills nav-stacked">
+                <li role="presentation" class="active"><a data-toggle="pill" href="#home">Home</a></li>
+                <li role="presentation"><a data-toggle="pill" href="#blueZone">Blue Zone</a></li>
+                <li role="presentation"><a data-toggle="pill" href="#greenZone">Green Zone</a></li>
+                <li role="presentation"><a data-toggle="pill" href="#orangeZone">Orange Zone</a></li>
+                <li role="presentation"><a data-toggle="pill" href="#yellowZone">Yellow Zone</a></li>
+                <li role="presentation"><a data-toggle="pill" href="#purpleZone">Purple Zone</a></li>
+                <li role="presentation"><a data-toggle="pill" href="#civilEng">Civil engineering</a></li>
+                <li role="presentation"><a data-toggle="pill" href="#residences">Residences</a></li>
+                <li role="presentation"><a data-toggle="pill" href="#cafeteria">Cafeteria</a></li>
+                <li role="presentation"><a data-toggle="pill" href="#visitors">Visitors</a></li>
+                <li role="presentation"><a data-toggle="pill" href="#medicine">Medicine</a></li>
+            </ul>
+        </div>
+        <div class="col-md-10">
+            <div class="tab-content">
+                <div id="home" class="tab-pane">
+                    <h3>HOME</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div id="blueZone" class="tab-pane">
+                    <h3>Blue</h3>
+                        <ui-gmap-google-map center="map.center" zoom="map.zoom" draggable="false" options="options" bounds="map.bounds">
+                        <ui-gmap-polygon static="true" ng-repeat="p in polygons track by p.id" path="p.path" stroke="p.stroke" visible="p.visible"
+                        geodesic="p.geodesic" fill="p.fill" fit="false" editable="p.editable"></ui-gmap-polygon>
+                        </ui-gmap-google-map>
+                </div>
+                <div id="greenZone" class="tab-pane">
+                    <h3>Green</h3>                    
+                </div>
+                <div id="orangeZone" class="tab-pane">
+                    <h3>Orange</h3>
+                </div>
+            </div>
+             <!--<ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map>
+            <div google-chart chart="chartObject" style="height:600px; width:95%;"></div>-->
+        </div>
     </div>
-  </div>
-
-  <form class="thing-form">
-    <label>Syncs in realtime across clients</label>
-    <p class="input-group">
-      <input type="text" class="form-control" placeholder="Add a new thing here." ng-model="$ctrl.newThing">
-      <span class="input-group-btn">
-        <button type="submit" class="btn btn-primary" ng-click="$ctrl.addThing()">Add New</button>
-      </span>
-    </p>
-  </form>
-</div>-->
-
-<header class="hero-unit" id="banner">
-  <div class="container">
-    <h1>Gupi</h1>
-  </div>
-</header>
-
-<div class="container">
-  <div class="row">
-    <div class="col-lg-12">
-      <h1 class="page-header">Features:</h1>
-      <ul class="nav nav-tabs nav-stacked col-md-4 col-lg-4 col-sm-6" ng-repeat="thing in $ctrl.awesomeThings">
-        <li><a href="#" uib-tooltip="{{thing.info}}">{{thing.name}}<button type="button" class="close" ng-click="$ctrl.deleteThing(thing)">&times;</button></a></li>
-      </ul>
-    </div>
-  </div>
-
-  <div google-chart chart="chartObject" style="height:600px; width:100%;"></div>
-
-  <form class="thing-form">
-    <label>Syncs in realtime across clients</label>
-    <p class="input-group">
-      <input type="text" class="form-control" placeholder="Add a new thing here." ng-model="$ctrl.newThing">
-      <span class="input-group-btn">
-        <button type="submit" class="btn btn-primary" ng-click="$ctrl.addThing()">Add New</button>
-      </span>
-    </p>
-  </form>
 </div>
 
+<script type="text/javascript">
 
+</script>
