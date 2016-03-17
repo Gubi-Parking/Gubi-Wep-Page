@@ -15,6 +15,12 @@ class MainController {
     $scope.pieGraph2 = false;
     $scope.pieGraph3 = false;
     $scope.pieGraph4 = false;
+    $scope.pieGraph5 = false;
+    $scope.pieGraph6 = false;
+    $scope.pieGraph7 = false;
+    $scope.pieGraph8 = false;
+    $scope.pieGraph9 = false;
+    $scope.pieGraph10 = false;
 
     $scope.graphSelect = function(){
       $scope.chartShow = true;
@@ -23,6 +29,12 @@ class MainController {
       $scope.pieGraph2 = false;
       $scope.pieGraph3 = false;
       $scope.pieGraph4 = false;
+      $scope.pieGraph5 = false;
+      $scope.pieGraph6 = false;
+      $scope.pieGraph7 = false;
+      $scope.pieGraph8 = false;
+      $scope.pieGraph9 = false;
+      $scope.pieGraph10 = false;
     };
 
     $scope.mapSelect = function(){
@@ -32,6 +44,12 @@ class MainController {
       $scope.pieGraph2 = false;
       $scope.pieGraph3 = false;
       $scope.pieGraph4 = false;
+      $scope.pieGraph5 = false;
+      $scope.pieGraph6 = false;
+      $scope.pieGraph7 = false;
+      $scope.pieGraph8 = false;
+      $scope.pieGraph9 = false;
+      $scope.pieGraph10 = false;
     };
 
     $scope.zona1 = function(){
@@ -41,6 +59,12 @@ class MainController {
       $scope.pieGraph2 = false;
       $scope.pieGraph3 = false;
       $scope.pieGraph4 = false;
+      $scope.pieGraph5 = false;
+      $scope.pieGraph6 = false;
+      $scope.pieGraph7 = false;
+      $scope.pieGraph8 = false;
+      $scope.pieGraph9 = false;
+      $scope.pieGraph10 = false;
     };
     $scope.zona2 = function(){
       $scope.chartShow = false;
@@ -49,6 +73,12 @@ class MainController {
       $scope.pieGraph2 = true;
       $scope.pieGraph3 = false;
       $scope.pieGraph4 = false;
+      $scope.pieGraph5 = false;
+      $scope.pieGraph6 = false;
+      $scope.pieGraph7 = false;
+      $scope.pieGraph8 = false;
+      $scope.pieGraph9 = false;
+      $scope.pieGraph10 = false;
     };
     $scope.zona3 = function(){
       $scope.chartShow = false;
@@ -57,6 +87,12 @@ class MainController {
       $scope.pieGraph2 = false;
       $scope.pieGraph3 = true;
       $scope.pieGraph4 = false;
+      $scope.pieGraph5 = false;
+      $scope.pieGraph6 = false;
+      $scope.pieGraph7 = false;
+      $scope.pieGraph8 = false;
+      $scope.pieGraph9 = false;
+      $scope.pieGraph10 = false;
     };
     $scope.zona4 = function(){
       $scope.chartShow = false;
@@ -65,6 +101,98 @@ class MainController {
       $scope.pieGraph2 = false;
       $scope.pieGraph3 = false;
       $scope.pieGraph4 = true;
+      $scope.pieGraph5 = false;
+      $scope.pieGraph6 = false;
+      $scope.pieGraph7 = false;
+      $scope.pieGraph8 = false;
+      $scope.pieGraph9 = false;
+      $scope.pieGraph10 = false;
+    };
+
+    $scope.zona5 = function(){
+      $scope.chartShow = false;
+      $scope.mapShow = false;
+      $scope.pieGraph1 = false;
+      $scope.pieGraph2 = false;
+      $scope.pieGraph3 = false;
+      $scope.pieGraph4 = false;
+      $scope.pieGraph5 = true;
+      $scope.pieGraph6 = false;
+      $scope.pieGraph7 = false;
+      $scope.pieGraph8 = false;
+      $scope.pieGraph9 = false;
+      $scope.pieGraph10 = false;
+    };
+
+    $scope.zona6 = function(){
+      $scope.chartShow = false;
+      $scope.mapShow = false;
+      $scope.pieGraph1 = false;
+      $scope.pieGraph2 = false;
+      $scope.pieGraph3 = false;
+      $scope.pieGraph4 = false;
+      $scope.pieGraph5 = false;
+      $scope.pieGraph6 = true;
+      $scope.pieGraph7 = false;
+      $scope.pieGraph8 = false;
+      $scope.pieGraph9 = false;
+      $scope.pieGraph10 = false;
+    };
+    $scope.zona7 = function(){
+      $scope.chartShow = false;
+      $scope.mapShow = false;
+      $scope.pieGraph1 = false;
+      $scope.pieGraph2 = false;
+      $scope.pieGraph3 = false;
+      $scope.pieGraph4 = false;
+      $scope.pieGraph5 = false;
+      $scope.pieGraph6 = false;
+      $scope.pieGraph7 = true;
+      $scope.pieGraph8 = false;
+      $scope.pieGraph9 = false;
+      $scope.pieGraph10 = false;
+    };
+    $scope.zona8 = function(){
+      $scope.chartShow = false;
+      $scope.mapShow = false;
+      $scope.pieGraph1 = false;
+      $scope.pieGraph2 = false;
+      $scope.pieGraph3 = false;
+      $scope.pieGraph4 = false;
+      $scope.pieGraph5 = false;
+      $scope.pieGraph6 = false;
+      $scope.pieGraph7 = false;
+      $scope.pieGraph8 = true;
+      $scope.pieGraph9 = false;
+      $scope.pieGraph10 = false;
+    };
+    $scope.zona9 = function(){
+      $scope.chartShow = false;
+      $scope.mapShow = false;
+      $scope.pieGraph1 = false;
+      $scope.pieGraph2 = false;
+      $scope.pieGraph3 = false;
+      $scope.pieGraph4 = false;
+      $scope.pieGraph5 = false;
+      $scope.pieGraph6 = false;
+      $scope.pieGraph7 = false;
+      $scope.pieGraph8 = false;
+      $scope.pieGraph9 = true;
+      $scope.pieGraph10 = false;
+    };
+    $scope.zona10 = function(){
+      $scope.chartShow = false;
+      $scope.mapShow = false;
+      $scope.pieGraph1 = false;
+      $scope.pieGraph2 = false;
+      $scope.pieGraph3 = false;
+      $scope.pieGraph4 = false;
+      $scope.pieGraph5 = false;
+      $scope.pieGraph6 = false;
+      $scope.pieGraph7 = false;
+      $scope.pieGraph8 = false;
+      $scope.pieGraph9 = false;
+      $scope.pieGraph10 = true;
     };
 
 
@@ -73,6 +201,12 @@ class MainController {
     $scope.zone2 = $firebaseObject(ref.child("ITESM/Zone2"));
     $scope.zone3 = $firebaseObject(ref.child("ITESM/Zone3"));
     $scope.zone4 = $firebaseObject(ref.child("ITESM/Zone4"));
+    $scope.zone5 = $firebaseObject(ref.child("ITESM/Zone5"));
+    $scope.zone6 = $firebaseObject(ref.child("ITESM/Zone6"));
+    $scope.zone7 = $firebaseObject(ref.child("ITESM/Zone7"));
+    $scope.zone8 = $firebaseObject(ref.child("ITESM/Zone8"));
+    $scope.zone9 = $firebaseObject(ref.child("ITESM/Zone9"));
+    $scope.zone10 = $firebaseObject(ref.child("ITESM/Zone10"));
 
     function go() {
       $scope.z1[2].v = $scope.zone1.Busy;
@@ -84,6 +218,19 @@ class MainController {
       $scope.z4[2].v = $scope.zone4.Busy;
       $scope.z4[1].v = $scope.zone4.Total-$scope.zone4.Busy;
 
+      $scope.z5[2].v = $scope.zone5.Busy;
+      $scope.z5[1].v = $scope.zone5.Total-$scope.zone5.Busy;
+      $scope.z6[2].v = $scope.zone6.Busy;
+      $scope.z6[1].v = $scope.zone6.Total-$scope.zone6.Busy;
+      $scope.z7[2].v = $scope.zone7.Busy;
+      $scope.z7[1].v = $scope.zone7.Total-$scope.zone7.Busy;
+      $scope.z8[2].v = $scope.zone8.Busy;
+      $scope.z8[1].v = $scope.zone8.Total-$scope.zone8.Busy;
+      $scope.z9[2].v = $scope.zone9.Busy;
+      $scope.z9[1].v = $scope.zone9.Total-$scope.zone9.Busy;
+      $scope.z10[2].v = $scope.zone10.Busy;
+      $scope.z10[1].v = $scope.zone10.Total-$scope.zone10.Busy;
+
       $scope.p1[1].v = $scope.zone1.Busy;
       $scope.p11[1].v = $scope.zone1.Total-$scope.zone1.Busy;
       $scope.p2[1].v = $scope.zone2.Busy;
@@ -92,6 +239,19 @@ class MainController {
       $scope.p33[1].v = $scope.zone3.Total-$scope.zone3.Busy;
       $scope.p4[1].v = $scope.zone4.Busy;
       $scope.p44[1].v = $scope.zone4.Total-$scope.zone4.Busy;
+
+      $scope.p5[1].v = $scope.zone5.Busy;
+      $scope.p55[1].v = $scope.zone5.Total-$scope.zone5.Busy;
+      $scope.p6[1].v = $scope.zone6.Busy;
+      $scope.p66[1].v = $scope.zone6.Total-$scope.zone6.Busy;
+      $scope.p7[1].v = $scope.zone7.Busy;
+      $scope.p77[1].v = $scope.zone7.Total-$scope.zone7.Busy;
+      $scope.p8[1].v = $scope.zone8.Busy;
+      $scope.p88[1].v = $scope.zone8.Total-$scope.zone8.Busy;
+      $scope.p9[1].v = $scope.zone9.Busy;
+      $scope.p99[1].v = $scope.zone9.Total-$scope.zone9.Busy;
+      $scope.p10[1].v = $scope.zone10.Busy;
+      $scope.p100[1].v = $scope.zone10.Total-$scope.zone10.Busy;
     }
 
     $interval(go, 1000);
@@ -138,11 +298,11 @@ class MainController {
             $scope.position = "Available: " + ($scope.zone1.Total - $scope.zone1.Busy);
             $scope.position2 = " Busy: " + $scope.zone1.Busy;
           },
-          mouseout: function(gPoly, eventName, polyModel) {
-            var bounds = new google.maps.LatLngBounds()
-            gPoly.getPath().forEach(function(latLng){bounds.extend(latLng)});
-            $scope.polywindow.show = false;
-          }
+          //mouseout: function(gPoly, eventName, polyModel) {
+            //var bounds = new google.maps.LatLngBounds()
+            //gPoly.getPath().forEach(function(latLng){bounds.extend(latLng)});
+            //$scope.polywindow.show = false;
+          //}
         },
         clickable: true,
         editable: true,
@@ -181,11 +341,11 @@ class MainController {
             $scope.position = "Available: " + ($scope.zone2.Total - $scope.zone2.Busy);
             $scope.position2 = " Busy: " + $scope.zone2.Busy;
           },
-          mouseout: function(gPoly, eventName, polyModel) {
-            var bounds = new google.maps.LatLngBounds()
-            gPoly.getPath().forEach(function(latLng){bounds.extend(latLng)});
-            $scope.polywindow.show = false;
-          }
+         // mouseout: function(gPoly, eventName, polyModel) {
+           // var bounds = new google.maps.LatLngBounds()
+            //gPoly.getPath().forEach(function(latLng){bounds.extend(latLng)});
+            //$scope.polywindow.show = false;
+         // }
         },
         clickable: true,
         editable: true,
@@ -227,11 +387,11 @@ class MainController {
             $scope.position = "Available: " + ($scope.zone3.Total - $scope.zone3.Busy);
             $scope.position2 = " Busy: " + $scope.zone3.Busy;
           },
-          mouseout: function(gPoly, eventName, polyModel) {
-            var bounds = new google.maps.LatLngBounds()
-            gPoly.getPath().forEach(function(latLng){bounds.extend(latLng)});
-            $scope.polywindow.show = false;
-          }
+          //mouseout: function(gPoly, eventName, polyModel) {
+            //var bounds = new google.maps.LatLngBounds()
+            //gPoly.getPath().forEach(function(latLng){bounds.extend(latLng)});
+            //$scope.polywindow.show = false;
+          //}
         },
         clickable: true,
         editable: true,
@@ -272,11 +432,11 @@ class MainController {
             $scope.position = "Available: " + ($scope.zone4.Total - $scope.zone4.Busy);
             $scope.position2 = " Busy: " + $scope.zone4.Busy;
           },
-          mouseout: function(gPoly, eventName, polyModel) {
-            var bounds = new google.maps.LatLngBounds()
-            gPoly.getPath().forEach(function(latLng){bounds.extend(latLng)});
-            $scope.polywindow.show = false;
-          }
+          //mouseout: function(gPoly, eventName, polyModel) {
+            //var bounds = new google.maps.LatLngBounds()
+            //gPoly.getPath().forEach(function(latLng){bounds.extend(latLng)});
+            //$scope.polywindow.show = false;
+          //}
         },
         clickable: true,
         editable: true,
@@ -315,14 +475,14 @@ class MainController {
             };
             $scope.polywindow.show = true;
             $scope.titles="Cafeteria ";
-            $scope.position = "Available: " + ($scope.zone1.Total - $scope.zone1.Busy);
-            $scope.position2 = " Busy: " + $scope.zone1.Busy;
+            $scope.position = "Available: " + ($scope.zone5.Total - $scope.zone5.Busy);
+            $scope.position2 = " Busy: " + $scope.zone5.Busy;
           },
-          mouseout: function(gPoly, eventName, polyModel) {
-            var bounds = new google.maps.LatLngBounds()
-            gPoly.getPath().forEach(function(latLng){bounds.extend(latLng)});
-            $scope.polywindow.show = false;
-          }
+          //mouseout: function(gPoly, eventName, polyModel) {
+            //var bounds = new google.maps.LatLngBounds()
+            //gPoly.getPath().forEach(function(latLng){bounds.extend(latLng)});
+            //$scope.polywindow.show = false;
+          //}
         },
         clickable: true,
         editable: true,
@@ -358,14 +518,14 @@ class MainController {
             };
             $scope.polywindow.show = true;
             $scope.titles="Zona Azul ";
-            $scope.position = "Available: " + ($scope.zone1.Total - $scope.zone1.Busy);
-            $scope.position2 = " Busy: " + $scope.zone1.Busy;
+            $scope.position = "Available: " + ($scope.zone6.Total - $scope.zone6.Busy);
+            $scope.position2 = " Busy: " + $scope.zone6.Busy;
           },
-          mouseout: function(gPoly, eventName, polyModel) {
-            var bounds = new google.maps.LatLngBounds()
-            gPoly.getPath().forEach(function(latLng){bounds.extend(latLng)});
-            $scope.polywindow.show = false;
-          }
+          //mouseout: function(gPoly, eventName, polyModel) {
+            //var bounds = new google.maps.LatLngBounds()
+            //gPoly.getPath().forEach(function(latLng){bounds.extend(latLng)});
+            //$scope.polywindow.show = false;
+          //}
         },
         clickable: true,
         editable: true,
@@ -401,14 +561,14 @@ class MainController {
             };
             $scope.polywindow.show = true;
             $scope.titles="Zona Amarilla ";
-            $scope.position = "Available: " + ($scope.zone1.Total - $scope.zone1.Busy);
-            $scope.position2 = " Busy: " + $scope.zone1.Busy;
+            $scope.position = "Available: " + ($scope.zone7.Total - $scope.zone7.Busy);
+            $scope.position2 = " Busy: " + $scope.zone7.Busy;
           },
-          mouseout: function(gPoly, eventName, polyModel) {
-            var bounds = new google.maps.LatLngBounds()
-            gPoly.getPath().forEach(function(latLng){bounds.extend(latLng)});
-            $scope.polywindow.show = false;
-          }
+          //mouseout: function(gPoly, eventName, polyModel) {
+            //var bounds = new google.maps.LatLngBounds()
+            //gPoly.getPath().forEach(function(latLng){bounds.extend(latLng)});
+            //$scope.polywindow.show = false;
+          //}
         },
         clickable: true,
         editable: true,
@@ -444,14 +604,14 @@ class MainController {
             };
             $scope.polywindow.show = true;
             $scope.titles="Zona Roja ";
-            $scope.position = "Available: " + ($scope.zone1.Total - $scope.zone1.Busy);
-            $scope.position2 = " Busy: " + $scope.zone1.Busy;
+            $scope.position = "Available: " + ($scope.zone8.Total - $scope.zone8.Busy);
+            $scope.position2 = " Busy: " + $scope.zone8.Busy;
           },
-          mouseout: function(gPoly, eventName, polyModel) {
-            var bounds = new google.maps.LatLngBounds()
-            gPoly.getPath().forEach(function(latLng){bounds.extend(latLng)});
-            $scope.polywindow.show = false;
-          }
+          //mouseout: function(gPoly, eventName, polyModel) {
+            //var bounds = new google.maps.LatLngBounds()
+            //gPoly.getPath().forEach(function(latLng){bounds.extend(latLng)});
+            //$scope.polywindow.show = false;
+          //}
         },
         clickable: true,
         editable: true,
@@ -487,14 +647,14 @@ class MainController {
             };
             $scope.polywindow.show = true;
             $scope.titles="Zona Verde ";
-            $scope.position = "Available: " + ($scope.zone1.Total - $scope.zone1.Busy);
-            $scope.position2 = " Busy: " + $scope.zone1.Busy;
+            $scope.position = "Available: " + ($scope.zone9.Total - $scope.zone9.Busy);
+            $scope.position2 = " Busy: " + $scope.zone9.Busy;
           },
-          mouseout: function(gPoly, eventName, polyModel) {
-            var bounds = new google.maps.LatLngBounds()
-            gPoly.getPath().forEach(function(latLng){bounds.extend(latLng)});
-            $scope.polywindow.show = false;
-          }
+          //mouseout: function(gPoly, eventName, polyModel) {
+            //var bounds = new google.maps.LatLngBounds()
+            //gPoly.getPath().forEach(function(latLng){bounds.extend(latLng)});
+            //$scope.polywindow.show = false;
+          //}
         },
         clickable: true,
         editable: true,
@@ -532,14 +692,14 @@ class MainController {
             };
             $scope.polywindow.show = true;
             $scope.titles="Zona Morada ";
-            $scope.position = "Available: " + ($scope.zone1.Total - $scope.zone1.Busy);
-            $scope.position2 = " Busy: " + $scope.zone1.Busy;
+            $scope.position = "Available: " + ($scope.zone10.Total - $scope.zone10.Busy);
+            $scope.position2 = " Busy: " + $scope.zone10.Busy;
           },
-          mouseout: function(gPoly, eventName, polyModel) {
-            var bounds = new google.maps.LatLngBounds()
-            gPoly.getPath().forEach(function(latLng){bounds.extend(latLng)});
-            $scope.polywindow.show = false;
-          }
+          //mouseout: function(gPoly, eventName, polyModel) {
+            //var bounds = new google.maps.LatLngBounds()
+            //gPoly.getPath().forEach(function(latLng){bounds.extend(latLng)});
+            //$scope.polywindow.show = false;
+          //}
         },
         clickable: true,
         editable: true,
@@ -700,6 +860,36 @@ class MainController {
       {v: 0},
       {v: 0},
     ];
+    $scope.z5 = [
+      {v: "Zone 5"},
+      {v: 0},
+      {v: 0},
+    ];
+    $scope.z6 = [
+      {v: "Zone 6"},
+      {v: 0},
+      {v: 0},
+    ];
+    $scope.z7 = [
+      {v: "Zone 7"},
+      {v: 0},
+      {v: 0},
+    ];
+    $scope.z8 = [
+      {v: " Zone 8"},
+      {v: 0},
+      {v: 0},
+    ];
+    $scope.z9 = [
+      {v: "Zone 9"},
+      {v: 0},
+      {v: 0},
+    ];
+    $scope.z10 = [
+      {v: "Zone 10"},
+      {v: 0},
+      {v: 0},
+    ];
 
     $scope.chartObject = {};
 
@@ -718,14 +908,20 @@ class MainController {
       {c: $scope.z2},
       {c: $scope.z3},
       {c: $scope.z4},
+      {c: $scope.z5},
+      {c: $scope.z6},
+      {c: $scope.z7},
+      {c: $scope.z8},
+      {c: $scope.z9},
+      {c: $scope.z10},
     ]};
 
     $scope.chartObject.options = {
       'title': 'Parking spaces statistics',
       isStacked: true,
       series: {
-        0: { color: '#339966' },
-        1: { color: '#6600CC' }
+        0: { color: '#6600CC' },
+        1: { color: '#FF9933' }
       }
     };
 
@@ -759,6 +955,54 @@ class MainController {
       {v: 0},
     ];
     $scope.p44 = [
+      {v: "Available"},
+      {v: 0},
+    ];
+    $scope.p5 = [
+      {v: "Busy"},
+      {v: 0},
+    ];
+    $scope.p55 = [
+      {v: "Available"},
+      {v: 0},
+    ];
+    $scope.p6 = [
+      {v: "Busy"},
+      {v: 0},
+    ];
+    $scope.p66 = [
+      {v: "Available"},
+      {v: 0},
+    ];
+    $scope.p7 = [
+      {v: "Busy"},
+      {v: 0},
+    ];
+    $scope.p77 = [
+      {v: "Available"},
+      {v: 0},
+    ];
+    $scope.p8 = [
+      {v: "Busy"},
+      {v: 0},
+    ];
+    $scope.p88 = [
+      {v: "Available"},
+      {v: 0},
+    ];
+    $scope.p9 = [
+      {v: "Busy"},
+      {v: 0},
+    ];
+    $scope.p99 = [
+      {v: "Available"},
+      {v: 0},
+    ];
+    $scope.p10 = [
+      {v: "Busy"},
+      {v: 0},
+    ];
+    $scope.p100 = [
       {v: "Available"},
       {v: 0},
     ];
@@ -855,7 +1099,133 @@ class MainController {
 
     /*************************/
 
+    $scope.pie5 = {};
 
+    $scope.pie5.data = {"cols": [
+      {id: "t", label: "Topping", type: "string"},
+      {id: "s", label: "Slices", type: "number"}
+    ], "rows": [
+      {c: $scope.p5},
+      {c: $scope.p55}
+    ]};
+
+    $scope.pie5.type = "PieChart";
+    $scope.pie5.options = {
+      'title': 'Available Spaces in Zone 5',
+      is3D: true,
+      slices: {
+        0: { color: '#FF66FF' },
+        1: { color: '#FF9933' }
+      }
+    };
+
+    /*************************/
+
+    $scope.pie6 = {};
+
+    $scope.pie6.data = {"cols": [
+      {id: "t", label: "Topping", type: "string"},
+      {id: "s", label: "Slices", type: "number"}
+    ], "rows": [
+      {c: $scope.p6},
+      {c: $scope.p66}
+    ]};
+
+    $scope.pie6.type = "PieChart";
+    $scope.pie6.options = {
+      'title': 'Available Spaces in Zone 6',
+      is3D: true,
+      slices: {
+        0: { color: '#FF66FF' },
+        1: { color: '#FF9933' }
+      }
+    };
+
+    /*************************/
+    $scope.pie7 = {};
+
+    $scope.pie7.data = {"cols": [
+      {id: "t", label: "Topping", type: "string"},
+      {id: "s", label: "Slices", type: "number"}
+    ], "rows": [
+      {c: $scope.p7},
+      {c: $scope.p77}
+    ]};
+
+    $scope.pie7.type = "PieChart";
+    $scope.pie7.options = {
+      'title': 'Available Spaces in Zone 7',
+      is3D: true,
+      slices: {
+        0: { color: '#FF66FF' },
+        1: { color: '#FF9933' }
+      }
+    };
+
+    /*************************/
+    $scope.pie8 = {};
+
+    $scope.pie8.data = {"cols": [
+      {id: "t", label: "Topping", type: "string"},
+      {id: "s", label: "Slices", type: "number"}
+    ], "rows": [
+      {c: $scope.p8},
+      {c: $scope.p88}
+    ]};
+
+    $scope.pie8.type = "PieChart";
+    $scope.pie8.options = {
+      'title': 'Available Spaces in Zone 8',
+      is3D: true,
+      slices: {
+        0: { color: '#FF66FF' },
+        1: { color: '#FF9933' }
+      }
+    };
+
+    /*************************/
+    $scope.pie9 = {};
+
+    $scope.pie9.data = {"cols": [
+      {id: "t", label: "Topping", type: "string"},
+      {id: "s", label: "Slices", type: "number"}
+    ], "rows": [
+      {c: $scope.p9},
+      {c: $scope.p99}
+    ]};
+
+    $scope.pie9.type = "PieChart";
+    $scope.pie9.options = {
+      'title': 'Available Spaces in Zone 9',
+      is3D: true,
+      slices: {
+        0: { color: '#FF66FF' },
+        1: { color: '#FF9933' }
+      }
+    };
+
+    /*************************/
+    $scope.pie10 = {};
+
+    $scope.pie10.data = {"cols": [
+      {id: "t", label: "Topping", type: "string"},
+      {id: "s", label: "Slices", type: "number"}
+    ], "rows": [
+      {c: $scope.p10},
+      {c: $scope.p100}
+    ]};
+
+    $scope.pie10.type = "PieChart";
+    $scope.pie10.options = {
+      'title': 'Available Spaces in Zone 10',
+      is3D: true,
+      slices: {
+        0: { color: '#FF66FF' },
+        1: { color: '#FF9933' }
+      }
+    };
+
+    /*************************/
 
     /*$scope.chartObject.data = {"cols": [
       {id: "t", label: "Topping", type: "string"},
