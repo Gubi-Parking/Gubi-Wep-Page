@@ -33,7 +33,8 @@
     <uib-tabset active="activePill" vertical="true" type="pills">
       <uib-tab index="0" heading="Map" ng-click="mapSelect()"></uib-tab>
       <uib-tab index="1" heading="Graph" ng-click="graphSelect()"></uib-tab>
-      <uib-tab index="2" heading="Aulas VI"></uib-tab>
+
+      <!--<uib-tab index="2" heading="Aulas VI"></uib-tab>
       <uib-tab index="3" heading="Aulas V"></uib-tab>
       <uib-tab index="4" heading="Medicina"></uib-tab>
       <uib-tab index="5" heading="Visitantes"></uib-tab>
@@ -43,11 +44,18 @@
       <uib-tab index="9" heading="Zona Roja"></uib-tab>
       <uib-tab index="10" heading="Zona Verde"></uib-tab>
       <uib-tab index="11" heading="Zona Morada"></uib-tab>
-      <uib-tab index="12" heading="Graph"></uib-tab>"></uib-tab>
+      <uib-tab index="12" heading="Graph"></uib-tab>"></uib-tab>-->
+      <uib-tab index="2" heading="Zone 1" ng-click="zona1()"></uib-tab>
+      <uib-tab index="3" heading="Zone 2" ng-click="zona2()"></uib-tab>
+      <uib-tab index="4" heading="Zone 3" ng-click="zona3()"></uib-tab>
+      <uib-tab index="5" heading="Zone 4" ng-click="zona4()"></uib-tab>
+
+
+
     </uib-tabset>
   </div>
   <div class="col-md-10">
-    <ui-gmap-google-map ng-show="mapShow" center="map.center" zoom="map.zoom" draggable="false" options="options" bounds="map.bounds">
+    <ui-gmap-google-map ng-if="mapShow" center="map.center" zoom="map.zoom" draggable="false" options="options" bounds="map.bounds">
       <ui-gmap-polygon static="true" ng-repeat="p in polygons track by p.id" path="p.path" stroke="p.stroke" visible="p.visible"
                        geodesic="p.geodesic" fill="p.fill" fit="false" editable="p.editable" clickable="p.clickable"></ui-gmap-polygon>
       <!--<ui-gmap-marker idkey="marker.id" coords="marker.coords" options="marker.options" click="onClick()" events="marker.events" >
@@ -56,8 +64,20 @@
         </ui-gmap-window>
       </ui-gmap-marker>-->
     </ui-gmap-google-map>
-    <div ng-show="chartShow">
+    <div ng-if="chartShow">
       <div google-chart  chart="chartObject" style="height:500px; width:100%;"></div>
+    </div>
+    <div ng-if="pieGraph1">
+      <div google-chart  chart="pie1" style="height:500px; width:100%;"></div>
+    </div>
+    <div ng-if="pieGraph2">
+      <div google-chart  chart="pie2" style="height:500px; width:100%;"></div>
+    </div>
+    <div ng-if="pieGraph3">
+      <div google-chart  chart="pie3" style="height:500px; width:100%;"></div>
+    </div>
+    <div ng-if="pieGraph4">
+      <div google-chart  chart="pie4" style="height:500px; width:100%;"></div>
     </div>
 
   </div>
