@@ -9,8 +9,8 @@ module.exports = {
   DOMAIN: 'http://localhost:9000',
   SESSION_SECRET: 'gubiparking-secret',
 
-  FACEBOOK_ID: 'app-id',
-  FACEBOOK_SECRET: 'secret',
+  FACEBOOK_ID: '204789119884848',
+  FACEBOOK_SECRET: 'ffd2b21501b2cc06702878bb1b559014',
   // Control debug level for modules using visionmedia/debug
   DEBUG: ''
 };

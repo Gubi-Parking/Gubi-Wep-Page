@@ -12,7 +12,8 @@ angular.module('gubiParkingApp', [
   'ui.bootstrap',
   'validation.match',
   'googlechart',
-  'uiGmapgoogle-maps'
+  'uiGmapgoogle-maps',
+  'firebase'
 ])
   .config(function($routeProvider, $locationProvider) {
     $routeProvider

@@ -4,12 +4,58 @@
 
 class MainController {
 
-  constructor($http, $scope, socket, $log) {
+  constructor($http, $scope, $firebaseObject, socket, $log, $interval) {
     this.$http = $http;
     this.socket = socket;
     this.awesomeThings = [];
 
+    var ref = new Firebase("https://gubi.firebaseio.com");
+    $scope.zone1 = $firebaseObject(ref.child("ITESM/Zone1"));
+    $scope.zone2 = $firebaseObject(ref.child("ITESM/Zone2"));
+    $scope.zone3 = $firebaseObject(ref.child("ITESM/Zone3"));
+    $scope.zone4 = $firebaseObject(ref.child("ITESM/Zone4"));
+
+    function go() {
+      $scope.z1[1].v = $scope.zone1.Total;
+      $scope.z1[2].v = $scope.zone1.Total-$scope.zone1.Busy;
+      $scope.z2[1].v = $scope.zone2.Total;
+      $scope.z2[2].v = $scope.zone2.Total-$scope.zone2.Busy;
+      $scope.z3[1].v = $scope.zone3.Total;
+      $scope.z3[2].v = $scope.zone3.Total-$scope.zone3.Busy;
+      $scope.z4[1].v = $scope.zone4.Total;
+      $scope.z4[2].v = $scope.zone4.Total-$scope.zone4.Busy;
+    }
+
+    $interval(go, 1000);
+
+
     $scope.map = { center: { latitude: 20.734282, longitude: -103.454845 }, zoom: 17 };
+
+    //$scope.map = {center: {latitude: 40.1451, longitude: -99.6680 }, zoom: 4 };
+    $scope.options = {scrollwheel: false};
+    $scope.marker = {
+      coords: {
+        latitude: 20.734282,
+        longitude: -103.454845
+      },
+      show: false,
+      id: 0
+    };
+
+    $scope.windowOptions = {
+      visible: false
+    };
+
+    $scope.onClick = function() {
+      $scope.windowOptions.visible = !$scope.windowOptions.visible;
+    };
+
+    $scope.closeClick = function() {
+      $scope.windowOptions.visible = false;
+    };
+
+    $scope.title = "Window Title!";
+
 
     //Aulas VI
     $scope.coordAulas6 = [
@@ -104,6 +150,7 @@ class MainController {
     $scope.polygons = [
       {
         id: 1,
+        clickable: true,
         path: [
           { latitude: 20.732746, longitude: -103.453703 },
           { latitude: 20.732626, longitude: -103.453059 },
@@ -334,7 +381,7 @@ class MainController {
       },
     ];
 
-    $scope.chartObject = {};
+
 
     $scope.chart =
       [{
@@ -408,12 +455,10 @@ class MainController {
           "used": "200"
         }];
 
-    $scope.chartObject.type = "ColumnChart";
-
     $scope.available = [200,100,123,234,109,187,99,102,189,212];
 
 
-    $scope.medicina = [
+    /*$scope.medicina = [
       {v: "Medicina"},
       {v: 412},
       {v: $scope.available[0]},
@@ -462,12 +507,62 @@ class MainController {
       {v: "Zona Morada"},
       {v: 446},
       {v: $scope.available[9]},
+    ];*/
+    $scope.z1 = [
+      {v: "Zona 1"},
+      {v: 0},
+      {v: 0},
     ];
+    $scope.z2 = [
+      {v: "Zona 2"},
+      {v: 0},
+      {v: 0},
+    ];
+    $scope.z3 = [
+      {v: "Zona 3"},
+      {v: 0},
+      {v: 0},
+    ];
+    $scope.z4 = [
+      {v: " Zona 4"},
+      {v: 0},
+      {v: 0},
+    ];
+
+    $scope.chartObject = {};
+
+    $scope.chartObject.type = "ColumnChart";
 
     $scope.chartObject.data = {"cols": [
       {id: "t", label: "Topping", type: "string"},
       {id: "s", label: "Total Spaces", type: "number"},
-      {id: "s", label: "Available", type: "number"}
+      {id: "s", label: "Available", type: "number"},
+      //{id: "s", label: "Car Pool", type: "number"},
+      //{id: "s", label: "Busy", type: "number"},
+      //{id: "s", label: "Wheel Chair", type: "number"}
+
+    ], "rows": [
+      {c: $scope.z1},
+      {c: $scope.z2},
+      {c: $scope.z3},
+      {c: $scope.z4},
+    ]};
+
+    $scope.chartObject.options = {
+      'title': 'Parking spaces statistics',
+    };
+
+
+
+
+    /*$scope.chartObject.data = {"cols": [
+      {id: "t", label: "Topping", type: "string"},
+      {id: "s", label: "Total Spaces", type: "number"},
+      {id: "s", label: "Available", type: "number"},
+      {id: "s", label: "Car Pool", type: "number"},
+      {id: "s", label: "Busy", type: "number"},
+      {id: "s", label: "Wheel Chair", type: "number"}
+
     ], "rows": [
       {c: $scope.medicina},
       {c: $scope.visitantes},
@@ -479,12 +574,43 @@ class MainController {
       {c: $scope.zn},
       {c: $scope.zam},
       {c: $scope.zm},
-    ]};
+    ]};*/
 
-    $scope.chartObject.options = {
-      'title': 'Parking spaces statistics',
 
-    };
+
+   /* $scope.datas = {
+      "ITESM" : {
+        "Zone1" : {
+          "Busy" : 10,
+            "CPool" : 0,
+            "Total" : 20,
+            "WChair" : 5
+        },
+        "Zone2" : {
+          "Busy" : 0,
+            "CPool" : 5,
+            "Total" : 25,
+            "WChair" : 0
+        },
+        "Zone3" : {
+          "Busy" : 5,
+            "CPool" : 0,
+            "Total" : 30,
+            "WChair" : 0
+        },
+        "Zone4" : {
+          "Busy" : 1,
+            "CPool" : 45,
+            "Total" : 14,
+            "WChair" : 20
+        }
+      }
+    };*/
+
+
+
+
+
 
     $scope.$on('$destroy', function() {
       socket.unsyncUpdates('thing');
