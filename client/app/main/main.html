@@ -55,15 +55,16 @@
     </uib-tabset>
   </div>
   <div class="col-md-10">
-    <ui-gmap-google-map ng-if="mapShow" center="map.center" zoom="map.zoom" draggable="false" options="options" bounds="map.bounds">
-      <ui-gmap-polygon static="true" ng-repeat="p in polygons track by p.id" path="p.path" stroke="p.stroke" visible="p.visible"
-                       geodesic="p.geodesic" fill="p.fill" fit="false" editable="p.editable" clickable="p.clickable"></ui-gmap-polygon>
-      <!--<ui-gmap-marker idkey="marker.id" coords="marker.coords" options="marker.options" click="onClick()" events="marker.events" >
-        <ui-gmap-window options="windowOptions" closeClick="closeClick()">
-          <div>{{title}}</div>
-        </ui-gmap-window>
-      </ui-gmap-marker>-->
+
+    <ui-gmap-google-map ng-if="mapShow" center="map.center" zoom="map.zoom" draggable="false" options="options" bounds="map.bounds" control="map.control">
+      <ui-gmap-polygons models="polygons" dorebuildall="true"
+                        path="'path'" stroke="'stroke'" geodesic="'geodesic'" static="'true'" fill="'fill'"
+                        fit="false" draggable="'draggable'" events="'events'">></ui-gmap-polygons>
+      <ui-gmap-window show="polywindow.show" coords="polywindow.coords">
+        <h> <b>{{titles}}</b> {{position}} {{position2}} </h>
+      </ui-gmap-window>
     </ui-gmap-google-map>
+
     <div ng-if="chartShow">
       <div google-chart  chart="chartObject" style="height:500px; width:100%;"></div>
     </div>
