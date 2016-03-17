@@ -9,6 +9,31 @@ class MainController {
     this.socket = socket;
     this.awesomeThings = [];
 
+    $scope.chartShow = true;
+    $scope.mapShow = true;
+    $scope.a2 = false;
+    $scope.a3 = false;
+    $scope.a4 = false;
+    $scope.a5 = false;
+    $scope.a6 = false;
+    $scope.a7 = false;
+    $scope.a8 = false;
+    $scope.a9 = false;
+    $scope.a10 = false;
+    $scope.a11 = false;
+    $scope.a12 = false;
+
+    $scope.graphSelect = function(){
+      $scope.chartShow = true;
+      $scope.mapShow = false;
+    };
+
+    $scope.mapSelect = function(){
+      $scope.chartShow = false;
+      $scope.mapShow = true;
+    };
+
+
     var ref = new Firebase("https://gubi.firebaseio.com");
     $scope.zone1 = $firebaseObject(ref.child("ITESM/Zone1"));
     $scope.zone2 = $firebaseObject(ref.child("ITESM/Zone2"));
@@ -29,7 +54,7 @@ class MainController {
     $interval(go, 1000);
 
 
-    $scope.map = { center: { latitude: 20.734282, longitude: -103.454845 }, zoom: 17 };
+    $scope.map = { center: { latitude: 20.734782, longitude: -103.454845 }, zoom: 17 };
 
     //$scope.map = {center: {latitude: 40.1451, longitude: -99.6680 }, zoom: 4 };
     $scope.options = {scrollwheel: false};
