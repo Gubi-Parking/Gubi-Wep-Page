@@ -256,7 +256,7 @@ class MainController {
 
     $interval(go, 1000);
 
-    $scope.map = { center: { latitude: 20.734782, longitude: -103.454845 }, zoom: 17 };
+    $scope.map = { center: { latitude: 20.734982, longitude: -103.454845 }, zoom: 17 };
 
     $scope.polywindow = {
       coords: {
@@ -921,7 +921,7 @@ class MainController {
       isStacked: true,
       series: {
         0: { color: '#6600CC' },
-        1: { color: '#FF9933' }
+        1: { color: '#FF0000' }
       }
     };
 
@@ -1023,7 +1023,7 @@ class MainController {
 
     $scope.pie1.type = "PieChart";
     $scope.pie1.options = {
-      'title': 'Available Spaces in Zone 1',
+      'title': 'Available Spaces in Aulas VI',
       is3D: true,
       slices: {
         0: { color: '#CC0066' },
@@ -1045,7 +1045,7 @@ class MainController {
 
     $scope.pie2.type = "PieChart";
     $scope.pie2.options = {
-      'title': 'Available Spaces in Zone 2',
+      'title': 'Available Spaces in Aulas V',
       is3D: true,
       slices: {
         0: { color: '#FF5050' },
@@ -1067,7 +1067,7 @@ class MainController {
 
     $scope.pie3.type = "PieChart";
     $scope.pie3.options = {
-      'title': 'Available Spaces in Zone 3',
+      'title': 'Available Spaces in Medicina',
       is3D: true,
       slices: {
         0: { color: '#0000FF' },
@@ -1089,7 +1089,7 @@ class MainController {
 
     $scope.pie4.type = "PieChart";
     $scope.pie4.options = {
-      'title': 'Available Spaces in Zone 4',
+      'title': 'Available Spaces in Visitantes',
       is3D: true,
       slices: {
         0: { color: '#FF66FF' },
@@ -1111,11 +1111,11 @@ class MainController {
 
     $scope.pie5.type = "PieChart";
     $scope.pie5.options = {
-      'title': 'Available Spaces in Zone 5',
+      'title': 'Available Spaces in Cafeteria',
       is3D: true,
       slices: {
-        0: { color: '#FF66FF' },
-        1: { color: '#FF9933' }
+        0: { color: '#CC0066' },
+        1: { color: '#00CC00' }
       }
     };
 
@@ -1133,11 +1133,11 @@ class MainController {
 
     $scope.pie6.type = "PieChart";
     $scope.pie6.options = {
-      'title': 'Available Spaces in Zone 6',
+      'title': 'Available Spaces in Zona Azul',
       is3D: true,
       slices: {
-        0: { color: '#FF66FF' },
-        1: { color: '#FF9933' }
+        0: { color: '#FF5050' },
+        1: { color: '#6600CC' }
       }
     };
 
@@ -1154,11 +1154,11 @@ class MainController {
 
     $scope.pie7.type = "PieChart";
     $scope.pie7.options = {
-      'title': 'Available Spaces in Zone 7',
+      'title': 'Available Spaces in Zona Amarilla',
       is3D: true,
       slices: {
-        0: { color: '#FF66FF' },
-        1: { color: '#FF9933' }
+        0: { color: '#0000FF' },
+        1: { color: '#00CC99' }
       }
     };
 
@@ -1175,7 +1175,7 @@ class MainController {
 
     $scope.pie8.type = "PieChart";
     $scope.pie8.options = {
-      'title': 'Available Spaces in Zone 8',
+      'title': 'Available Spaces in Zona Roja',
       is3D: true,
       slices: {
         0: { color: '#FF66FF' },
@@ -1196,11 +1196,11 @@ class MainController {
 
     $scope.pie9.type = "PieChart";
     $scope.pie9.options = {
-      'title': 'Available Spaces in Zone 9',
+      'title': 'Available Spaces in Zona Verde',
       is3D: true,
       slices: {
-        0: { color: '#FF66FF' },
-        1: { color: '#FF9933' }
+        0: { color: '#CC0066' },
+        1: { color: '#00CC00' }
       }
     };
 
@@ -1217,11 +1217,11 @@ class MainController {
 
     $scope.pie10.type = "PieChart";
     $scope.pie10.options = {
-      'title': 'Available Spaces in Zone 10',
+      'title': 'Available Spaces in Zona Morada',
       is3D: true,
       slices: {
-        0: { color: '#FF66FF' },
-        1: { color: '#FF9933' }
+        0: { color: '#FF5050' },
+        1: { color: '#6600CC' }
       }
     };
 
