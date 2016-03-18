@@ -197,16 +197,16 @@ class MainController {
 
 
     var ref = new Firebase("https://gubi.firebaseio.com");
-    $scope.zone1 = $firebaseObject(ref.child("ITESM/Zone1"));
-    $scope.zone2 = $firebaseObject(ref.child("ITESM/Zone2"));
-    $scope.zone3 = $firebaseObject(ref.child("ITESM/Zone3"));
-    $scope.zone4 = $firebaseObject(ref.child("ITESM/Zone4"));
-    $scope.zone5 = $firebaseObject(ref.child("ITESM/Zone5"));
-    $scope.zone6 = $firebaseObject(ref.child("ITESM/Zone6"));
-    $scope.zone7 = $firebaseObject(ref.child("ITESM/Zone7"));
-    $scope.zone8 = $firebaseObject(ref.child("ITESM/Zone8"));
-    $scope.zone9 = $firebaseObject(ref.child("ITESM/Zone9"));
-    $scope.zone10 = $firebaseObject(ref.child("ITESM/Zone10"));
+    $scope.zone1 = $firebaseObject(ref.child("ITESM/ZoneI"));
+    $scope.zone2 = $firebaseObject(ref.child("ITESM/ZoneJ"));
+    $scope.zone3 = $firebaseObject(ref.child("ITESM/ZoneF"));
+    $scope.zone4 = $firebaseObject(ref.child("ITESM/ZoneG"));
+    $scope.zone5 = $firebaseObject(ref.child("ITESM/ZoneH"));
+    $scope.zone6 = $firebaseObject(ref.child("ITESM/ZoneA"));
+    $scope.zone7 = $firebaseObject(ref.child("ITESM/ZoneD"));
+    $scope.zone8 = $firebaseObject(ref.child("ITESM/ZoneC"));
+    $scope.zone9 = $firebaseObject(ref.child("ITESM/ZoneB"));
+    $scope.zone10 = $firebaseObject(ref.child("ITESM/ZoneE"));
 
     function go() {
       $scope.z1[2].v = $scope.zone1.Busy;
@@ -841,52 +841,52 @@ class MainController {
     ];*/
 
     $scope.z1 = [
-      {v: "Zone 1"},
+      {v: "Aulas VI"},
       {v: 0},
       {v: 0},
     ];
     $scope.z2 = [
-      {v: "Zone 2"},
+      {v: "Aulas V"},
       {v: 0},
       {v: 0},
     ];
     $scope.z3 = [
-      {v: "Zone 3"},
+      {v: "Medicina"},
       {v: 0},
       {v: 0},
     ];
     $scope.z4 = [
-      {v: " Zone 4"},
+      {v: "Visitantes"},
       {v: 0},
       {v: 0},
     ];
     $scope.z5 = [
-      {v: "Zone 5"},
+      {v: "Cafeteria"},
       {v: 0},
       {v: 0},
     ];
     $scope.z6 = [
-      {v: "Zone 6"},
+      {v: "Zona Azul"},
       {v: 0},
       {v: 0},
     ];
     $scope.z7 = [
-      {v: "Zone 7"},
+      {v: "Zona Amarilla"},
       {v: 0},
       {v: 0},
     ];
     $scope.z8 = [
-      {v: " Zone 8"},
+      {v: " Zona Roja"},
       {v: 0},
       {v: 0},
     ];
     $scope.z9 = [
-      {v: "Zone 9"},
+      {v: "Zona Verde"},
       {v: 0},
       {v: 0},
     ];
     $scope.z10 = [
-      {v: "Zone 10"},
+      {v: "Zona Morada"},
       {v: 0},
       {v: 0},
     ];
