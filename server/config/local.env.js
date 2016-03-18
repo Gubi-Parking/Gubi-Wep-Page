@@ -6,7 +6,7 @@
 // You will need to set these on the server you deploy to.
 
 module.exports = {
-  DOMAIN: 'http://104.236.115.243:9000',
+  DOMAIN: 'http://localhost:9000',
   SESSION_SECRET: 'gubiparking-secret',
 
   FACEBOOK_ID: '204789119884848',
