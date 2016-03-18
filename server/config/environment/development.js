@@ -6,7 +6,7 @@ module.exports = {
 
   // MongoDB connection options
   mongo: {
-    uri: 'mongodb://104.236.115.243/gubiparking-dev'
+    uri: 'mongodb://localhost/gubiparking-dev'
   },
 
   // Seed database on startup
