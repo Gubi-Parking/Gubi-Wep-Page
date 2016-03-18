@@ -196,62 +196,62 @@ class MainController {
     };
 
 
-    var ref = new Firebase("https://gubi.firebaseio.com");
-    $scope.zone1 = $firebaseObject(ref.child("ITESM/ZoneI"));
-    $scope.zone2 = $firebaseObject(ref.child("ITESM/ZoneJ"));
-    $scope.zone3 = $firebaseObject(ref.child("ITESM/ZoneF"));
-    $scope.zone4 = $firebaseObject(ref.child("ITESM/ZoneG"));
-    $scope.zone5 = $firebaseObject(ref.child("ITESM/ZoneH"));
-    $scope.zone6 = $firebaseObject(ref.child("ITESM/ZoneA"));
-    $scope.zone7 = $firebaseObject(ref.child("ITESM/ZoneD"));
-    $scope.zone8 = $firebaseObject(ref.child("ITESM/ZoneC"));
-    $scope.zone9 = $firebaseObject(ref.child("ITESM/ZoneB"));
-    $scope.zone10 = $firebaseObject(ref.child("ITESM/ZoneE"));
+    var ref = new Firebase('https://gubi.firebaseio.com');
+    $scope.zone1 = $firebaseObject(ref.child('ITESM/ZoneI'));
+    $scope.zone2 = $firebaseObject(ref.child('ITESM/ZoneJ'));
+    $scope.zone3 = $firebaseObject(ref.child('ITESM/ZoneF'));
+    $scope.zone4 = $firebaseObject(ref.child('ITESM/ZoneG'));
+    $scope.zone5 = $firebaseObject(ref.child('ITESM/ZoneH'));
+    $scope.zone6 = $firebaseObject(ref.child('ITESM/ZoneA'));
+    $scope.zone7 = $firebaseObject(ref.child('ITESM/ZoneD'));
+    $scope.zone8 = $firebaseObject(ref.child('ITESM/ZoneC'));
+    $scope.zone9 = $firebaseObject(ref.child('ITESM/ZoneB'));
+    $scope.zone10 = $firebaseObject(ref.child('ITESM/ZoneE'));
 
     function go() {
       $scope.z1[2].v = $scope.zone1.Busy;
-      $scope.z1[1].v = $scope.zone1.Total-$scope.zone1.Busy;
+      $scope.z1[1].v = $scope.zone1.Total - $scope.zone1.Busy;
       $scope.z2[2].v = $scope.zone2.Busy;
-      $scope.z2[1].v = $scope.zone2.Total-$scope.zone2.Busy;
+      $scope.z2[1].v = $scope.zone2.Total - $scope.zone2.Busy;
       $scope.z3[2].v = $scope.zone3.Busy;
-      $scope.z3[1].v = $scope.zone3.Total-$scope.zone3.Busy;
+      $scope.z3[1].v = $scope.zone3.Total - $scope.zone3.Busy;
       $scope.z4[2].v = $scope.zone4.Busy;
-      $scope.z4[1].v = $scope.zone4.Total-$scope.zone4.Busy;
+      $scope.z4[1].v = $scope.zone4.Total - $scope.zone4.Busy;
 
       $scope.z5[2].v = $scope.zone5.Busy;
-      $scope.z5[1].v = $scope.zone5.Total-$scope.zone5.Busy;
+      $scope.z5[1].v = $scope.zone5.Total - $scope.zone5.Busy;
       $scope.z6[2].v = $scope.zone6.Busy;
-      $scope.z6[1].v = $scope.zone6.Total-$scope.zone6.Busy;
+      $scope.z6[1].v = $scope.zone6.Total - $scope.zone6.Busy;
       $scope.z7[2].v = $scope.zone7.Busy;
-      $scope.z7[1].v = $scope.zone7.Total-$scope.zone7.Busy;
+      $scope.z7[1].v = $scope.zone7.Total - $scope.zone7.Busy;
       $scope.z8[2].v = $scope.zone8.Busy;
-      $scope.z8[1].v = $scope.zone8.Total-$scope.zone8.Busy;
+      $scope.z8[1].v = $scope.zone8.Total - $scope.zone8.Busy;
       $scope.z9[2].v = $scope.zone9.Busy;
-      $scope.z9[1].v = $scope.zone9.Total-$scope.zone9.Busy;
+      $scope.z9[1].v = $scope.zone9.Total - $scope.zone9.Busy;
       $scope.z10[2].v = $scope.zone10.Busy;
-      $scope.z10[1].v = $scope.zone10.Total-$scope.zone10.Busy;
+      $scope.z10[1].v = $scope.zone10.Total - $scope.zone10.Busy;
 
       $scope.p1[1].v = $scope.zone1.Busy;
-      $scope.p11[1].v = $scope.zone1.Total-$scope.zone1.Busy;
+      $scope.p11[1].v = $scope.zone1.Total - $scope.zone1.Busy;
       $scope.p2[1].v = $scope.zone2.Busy;
-      $scope.p22[1].v = $scope.zone2.Total-$scope.zone2.Busy;
+      $scope.p22[1].v = $scope.zone2.Total - $scope.zone2.Busy;
       $scope.p3[1].v = $scope.zone3.Busy;
-      $scope.p33[1].v = $scope.zone3.Total-$scope.zone3.Busy;
+      $scope.p33[1].v = $scope.zone3.Total - $scope.zone3.Busy;
       $scope.p4[1].v = $scope.zone4.Busy;
-      $scope.p44[1].v = $scope.zone4.Total-$scope.zone4.Busy;
+      $scope.p44[1].v = $scope.zone4.Total - $scope.zone4.Busy;
 
       $scope.p5[1].v = $scope.zone5.Busy;
-      $scope.p55[1].v = $scope.zone5.Total-$scope.zone5.Busy;
+      $scope.p55[1].v = $scope.zone5.Total - $scope.zone5.Busy;
       $scope.p6[1].v = $scope.zone6.Busy;
-      $scope.p66[1].v = $scope.zone6.Total-$scope.zone6.Busy;
+      $scope.p66[1].v = $scope.zone6.Total - $scope.zone6.Busy;
       $scope.p7[1].v = $scope.zone7.Busy;
-      $scope.p77[1].v = $scope.zone7.Total-$scope.zone7.Busy;
+      $scope.p77[1].v = $scope.zone7.Total - $scope.zone7.Busy;
       $scope.p8[1].v = $scope.zone8.Busy;
-      $scope.p88[1].v = $scope.zone8.Total-$scope.zone8.Busy;
+      $scope.p88[1].v = $scope.zone8.Total - $scope.zone8.Busy;
       $scope.p9[1].v = $scope.zone9.Busy;
-      $scope.p99[1].v = $scope.zone9.Total-$scope.zone9.Busy;
+      $scope.p99[1].v = $scope.zone9.Total - $scope.zone9.Busy;
       $scope.p10[1].v = $scope.zone10.Busy;
-      $scope.p100[1].v = $scope.zone10.Total-$scope.zone10.Busy;
+      $scope.p100[1].v = $scope.zone10.Total - $scope.zone10.Busy;
     }
 
     $interval(go, 1000);
@@ -266,14 +266,13 @@ class MainController {
       show: false
     };
 
-    $scope.titles="";
-    $scope.position=0;
-    $scope.position2=0;
+    $scope.titles = '';
+    $scope.position = 0;
+    $scope.position2 = 0;
 
     $scope.polygons = [
       {
         id: 1,
-        clickable: true,
         path: [
           { latitude: 20.732746, longitude: -103.453703 },
           { latitude: 20.732626, longitude: -103.453059 },
@@ -286,21 +285,21 @@ class MainController {
         },
         events: {
           mouseover: function(gPoly, eventName, polyModel) {
-            var bounds = new google.maps.LatLngBounds()
-            gPoly.getPath().forEach(function(latLng){bounds.extend(latLng)});
+            var bounds = new google.maps.LatLngBounds();
+            gPoly.getPath().forEach(function(latLng){bounds.extend(latLng); });
             var gCenter = bounds.getCenter();
             $scope.polywindow.coords = {
-              latitude:gCenter.lat(),
-              longitude:gCenter.lng()
+              latitude: gCenter.lat(),
+              longitude: gCenter.lng()
             };
             $scope.polywindow.show = true;
-            $scope.titles="Aulas VI ";
-            $scope.position = "Available: " + ($scope.zone1.Total - $scope.zone1.Busy);
-            $scope.position2 = " Busy: " + $scope.zone1.Busy;
+            $scope.titles = 'Aulas VI ';
+            $scope.position = 'Available: ' + ($scope.zone1.Total - $scope.zone1.Busy);
+            $scope.position2 = ' Busy: ' + $scope.zone1.Busy;
           },
           //mouseout: function(gPoly, eventName, polyModel) {
             //var bounds = new google.maps.LatLngBounds()
-            //gPoly.getPath().forEach(function(latLng){bounds.extend(latLng)});
+            //gPoly.getPath().forEach(function(latLng){bounds.extend(latLng); });
             //$scope.polywindow.show = false;
           //}
         },
@@ -329,21 +328,21 @@ class MainController {
         },
         events: {
           mouseover: function(gPoly, eventName, polyModel) {
-            var bounds = new google.maps.LatLngBounds()
-            gPoly.getPath().forEach(function(latLng){bounds.extend(latLng)});
+            var bounds = new google.maps.LatLngBounds();
+            gPoly.getPath().forEach(function(latLng){bounds.extend(latLng); });
             var gCenter = bounds.getCenter();
             $scope.polywindow.coords = {
-              latitude:gCenter.lat(),
-              longitude:gCenter.lng()
+              latitude: gCenter.lat(),
+              longitude: gCenter.lng()
             };
             $scope.polywindow.show = true;
-            $scope.titles="Aulas V ";
-            $scope.position = "Available: " + ($scope.zone2.Total - $scope.zone2.Busy);
-            $scope.position2 = " Busy: " + $scope.zone2.Busy;
+            $scope.titles = 'Aulas V ';
+            $scope.position = 'Available: ' + ($scope.zone2.Total - $scope.zone2.Busy);
+            $scope.position2 = ' Busy: ' + $scope.zone2.Busy;
           },
          // mouseout: function(gPoly, eventName, polyModel) {
            // var bounds = new google.maps.LatLngBounds()
-            //gPoly.getPath().forEach(function(latLng){bounds.extend(latLng)});
+            //gPoly.getPath().forEach(function(latLng){bounds.extend(latLng); });
             //$scope.polywindow.show = false;
          // }
         },
@@ -375,21 +374,21 @@ class MainController {
         },
         events: {
           mouseover: function(gPoly, eventName, polyModel) {
-            var bounds = new google.maps.LatLngBounds()
-            gPoly.getPath().forEach(function(latLng){bounds.extend(latLng)});
+            var bounds = new google.maps.LatLngBounds();
+            gPoly.getPath().forEach(function(latLng){bounds.extend(latLng); });
             var gCenter = bounds.getCenter();
             $scope.polywindow.coords = {
-              latitude:gCenter.lat(),
-              longitude:gCenter.lng()
+              latitude: gCenter.lat(),
+              longitude: gCenter.lng()
             };
             $scope.polywindow.show = true;
-            $scope.titles="Medicina ";
-            $scope.position = "Available: " + ($scope.zone3.Total - $scope.zone3.Busy);
-            $scope.position2 = " Busy: " + $scope.zone3.Busy;
+            $scope.titles = 'Medicina ';
+            $scope.position = 'Available: ' + ($scope.zone3.Total - $scope.zone3.Busy);
+            $scope.position2 = ' Busy: ' + $scope.zone3.Busy;
           },
           //mouseout: function(gPoly, eventName, polyModel) {
             //var bounds = new google.maps.LatLngBounds()
-            //gPoly.getPath().forEach(function(latLng){bounds.extend(latLng)});
+            //gPoly.getPath().forEach(function(latLng){bounds.extend(latLng); });
             //$scope.polywindow.show = false;
           //}
         },
@@ -420,21 +419,21 @@ class MainController {
         },
         events: {
           mouseover: function(gPoly, eventName, polyModel) {
-            var bounds = new google.maps.LatLngBounds()
-            gPoly.getPath().forEach(function(latLng){bounds.extend(latLng)});
+            var bounds = new google.maps.LatLngBounds();
+            gPoly.getPath().forEach(function(latLng){bounds.extend(latLng); });
             var gCenter = bounds.getCenter();
             $scope.polywindow.coords = {
-              latitude:gCenter.lat(),
-              longitude:gCenter.lng()
+              latitude: gCenter.lat(),
+              longitude: gCenter.lng()
             };
             $scope.polywindow.show = true;
-            $scope.titles="Visitantes ";
-            $scope.position = "Available: " + ($scope.zone4.Total - $scope.zone4.Busy);
-            $scope.position2 = " Busy: " + $scope.zone4.Busy;
+            $scope.titles = 'Visitantes ';
+            $scope.position = 'Available: ' + ($scope.zone4.Total - $scope.zone4.Busy);
+            $scope.position2 = ' Busy: ' + $scope.zone4.Busy;
           },
           //mouseout: function(gPoly, eventName, polyModel) {
             //var bounds = new google.maps.LatLngBounds()
-            //gPoly.getPath().forEach(function(latLng){bounds.extend(latLng)});
+            //gPoly.getPath().forEach(function(latLng){bounds.extend(latLng); });
             //$scope.polywindow.show = false;
           //}
         },
@@ -466,21 +465,21 @@ class MainController {
         },
         events: {
           mouseover: function(gPoly, eventName, polyModel) {
-            var bounds = new google.maps.LatLngBounds()
-            gPoly.getPath().forEach(function(latLng){bounds.extend(latLng)});
+            var bounds = new google.maps.LatLngBounds();
+            gPoly.getPath().forEach(function(latLng){bounds.extend(latLng); });
             var gCenter = bounds.getCenter();
             $scope.polywindow.coords = {
-              latitude:gCenter.lat(),
-              longitude:gCenter.lng()
+              latitude: gCenter.lat(),
+              longitude: gCenter.lng()
             };
             $scope.polywindow.show = true;
-            $scope.titles="Cafeteria ";
-            $scope.position = "Available: " + ($scope.zone5.Total - $scope.zone5.Busy);
-            $scope.position2 = " Busy: " + $scope.zone5.Busy;
+            $scope.titles = 'Cafeteria ';
+            $scope.position = 'Available: ' + ($scope.zone5.Total - $scope.zone5.Busy);
+            $scope.position2 = ' Busy: ' + $scope.zone5.Busy;
           },
           //mouseout: function(gPoly, eventName, polyModel) {
             //var bounds = new google.maps.LatLngBounds()
-            //gPoly.getPath().forEach(function(latLng){bounds.extend(latLng)});
+            //gPoly.getPath().forEach(function(latLng){bounds.extend(latLng); });
             //$scope.polywindow.show = false;
           //}
         },
@@ -509,21 +508,21 @@ class MainController {
         },
         events: {
           mouseover: function(gPoly, eventName, polyModel) {
-            var bounds = new google.maps.LatLngBounds()
-            gPoly.getPath().forEach(function(latLng){bounds.extend(latLng)});
+            var bounds = new google.maps.LatLngBounds();
+            gPoly.getPath().forEach(function(latLng){bounds.extend(latLng); });
             var gCenter = bounds.getCenter();
             $scope.polywindow.coords = {
-              latitude:gCenter.lat(),
-              longitude:gCenter.lng()
+              latitude: gCenter.lat(),
+              longitude: gCenter.lng()
             };
             $scope.polywindow.show = true;
-            $scope.titles="Zona Azul ";
-            $scope.position = "Available: " + ($scope.zone6.Total - $scope.zone6.Busy);
-            $scope.position2 = " Busy: " + $scope.zone6.Busy;
+            $scope.titles = 'Zona Azul ';
+            $scope.position = 'Available: ' + ($scope.zone6.Total - $scope.zone6.Busy);
+            $scope.position2 = ' Busy: ' + $scope.zone6.Busy;
           },
           //mouseout: function(gPoly, eventName, polyModel) {
             //var bounds = new google.maps.LatLngBounds()
-            //gPoly.getPath().forEach(function(latLng){bounds.extend(latLng)});
+            //gPoly.getPath().forEach(function(latLng){bounds.extend(latLng); });
             //$scope.polywindow.show = false;
           //}
         },
@@ -552,21 +551,21 @@ class MainController {
         },
         events: {
           mouseover: function(gPoly, eventName, polyModel) {
-            var bounds = new google.maps.LatLngBounds()
-            gPoly.getPath().forEach(function(latLng){bounds.extend(latLng)});
+            var bounds = new google.maps.LatLngBounds();
+            gPoly.getPath().forEach(function(latLng){bounds.extend(latLng); });
             var gCenter = bounds.getCenter();
             $scope.polywindow.coords = {
-              latitude:gCenter.lat(),
-              longitude:gCenter.lng()
+              latitude: gCenter.lat(),
+              longitude: gCenter.lng()
             };
             $scope.polywindow.show = true;
-            $scope.titles="Zona Amarilla ";
-            $scope.position = "Available: " + ($scope.zone7.Total - $scope.zone7.Busy);
-            $scope.position2 = " Busy: " + $scope.zone7.Busy;
+            $scope.titles = 'Zona Amarilla ';
+            $scope.position = 'Available: ' + ($scope.zone7.Total - $scope.zone7.Busy);
+            $scope.position2 = ' Busy: ' + $scope.zone7.Busy;
           },
           //mouseout: function(gPoly, eventName, polyModel) {
             //var bounds = new google.maps.LatLngBounds()
-            //gPoly.getPath().forEach(function(latLng){bounds.extend(latLng)});
+            //gPoly.getPath().forEach(function(latLng){bounds.extend(latLng); });
             //$scope.polywindow.show = false;
           //}
         },
@@ -595,21 +594,21 @@ class MainController {
         },
         events: {
           mouseover: function(gPoly, eventName, polyModel) {
-            var bounds = new google.maps.LatLngBounds()
-            gPoly.getPath().forEach(function(latLng){bounds.extend(latLng)});
+            var bounds = new google.maps.LatLngBounds();
+            gPoly.getPath().forEach(function(latLng){bounds.extend(latLng); });
             var gCenter = bounds.getCenter();
             $scope.polywindow.coords = {
-              latitude:gCenter.lat(),
-              longitude:gCenter.lng()
+              latitude: gCenter.lat(),
+              longitude: gCenter.lng()
             };
             $scope.polywindow.show = true;
-            $scope.titles="Zona Roja ";
-            $scope.position = "Available: " + ($scope.zone8.Total - $scope.zone8.Busy);
-            $scope.position2 = " Busy: " + $scope.zone8.Busy;
+            $scope.titles = 'Zona Roja ';
+            $scope.position = 'Available: ' + ($scope.zone8.Total - $scope.zone8.Busy);
+            $scope.position2 = ' Busy: ' + $scope.zone8.Busy;
           },
           //mouseout: function(gPoly, eventName, polyModel) {
             //var bounds = new google.maps.LatLngBounds()
-            //gPoly.getPath().forEach(function(latLng){bounds.extend(latLng)});
+            //gPoly.getPath().forEach(function(latLng){bounds.extend(latLng); });
             //$scope.polywindow.show = false;
           //}
         },
@@ -638,21 +637,21 @@ class MainController {
         },
         events: {
           mouseover: function(gPoly, eventName, polyModel) {
-            var bounds = new google.maps.LatLngBounds()
-            gPoly.getPath().forEach(function(latLng){bounds.extend(latLng)});
+            var bounds = new google.maps.LatLngBounds();
+            gPoly.getPath().forEach(function(latLng){bounds.extend(latLng); });
             var gCenter = bounds.getCenter();
             $scope.polywindow.coords = {
-              latitude:gCenter.lat(),
-              longitude:gCenter.lng()
+              latitude: gCenter.lat(),
+              longitude: gCenter.lng()
             };
             $scope.polywindow.show = true;
-            $scope.titles="Zona Verde ";
-            $scope.position = "Available: " + ($scope.zone9.Total - $scope.zone9.Busy);
-            $scope.position2 = " Busy: " + $scope.zone9.Busy;
+            $scope.titles = 'Zona Verde ';
+            $scope.position = 'Available: ' + ($scope.zone9.Total - $scope.zone9.Busy);
+            $scope.position2 = ' Busy: ' + $scope.zone9.Busy;
           },
           //mouseout: function(gPoly, eventName, polyModel) {
             //var bounds = new google.maps.LatLngBounds()
-            //gPoly.getPath().forEach(function(latLng){bounds.extend(latLng)});
+            //gPoly.getPath().forEach(function(latLng){bounds.extend(latLng); });
             //$scope.polywindow.show = false;
           //}
         },
@@ -683,21 +682,21 @@ class MainController {
         },
         events: {
           mouseover: function(gPoly, eventName, polyModel) {
-            var bounds = new google.maps.LatLngBounds()
-            gPoly.getPath().forEach(function(latLng){bounds.extend(latLng)});
+            var bounds = new google.maps.LatLngBounds();
+            gPoly.getPath().forEach(function(latLng){bounds.extend(latLng); });
             var gCenter = bounds.getCenter();
             $scope.polywindow.coords = {
-              latitude:gCenter.lat(),
-              longitude:gCenter.lng()
+              latitude: gCenter.lat(),
+              longitude: gCenter.lng()
             };
             $scope.polywindow.show = true;
-            $scope.titles="Zona Morada ";
-            $scope.position = "Available: " + ($scope.zone10.Total - $scope.zone10.Busy);
-            $scope.position2 = " Busy: " + $scope.zone10.Busy;
+            $scope.titles = 'Zona Morada ';
+            $scope.position = 'Available: ' + ($scope.zone10.Total - $scope.zone10.Busy);
+            $scope.position2 = ' Busy: ' + $scope.zone10.Busy;
           },
           //mouseout: function(gPoly, eventName, polyModel) {
             //var bounds = new google.maps.LatLngBounds()
-            //gPoly.getPath().forEach(function(latLng){bounds.extend(latLng)});
+            //gPoly.getPath().forEach(function(latLng){bounds.extend(latLng); });
             //$scope.polywindow.show = false;
           //}
         },
@@ -714,196 +713,70 @@ class MainController {
       },
     ];
 
-    /*$scope.chart =
-      [{
-        "name": "Medicina",
-        "timestamp": "",
-        "available": "100",
-        "total": 412,
-        "used": "200"
-      },
-        {
-          "name": "Visitantes",
-          "timestamp": "",
-          "available": "100",
-          "total": 237,
-          "used": "200",
-        },
-        {
-          "name": "Cafeteria/Centro de congresos",
-          "timestamp": "",
-          "available": "100",
-          "total": 288,
-          "used": "200"
-        },
-        {
-          "name": "Aulas VI/Residencias",
-          "timestamp": "",
-          "available": "100",
-          "total": 230,
-          "used": "200"
-        },
-        {
-          "name": "Aulas V/Ingenieria Civil",
-          "timestamp": "",
-          "available": "100",
-          "total": 291,
-          "used": "200"
-        },
-        {
-          "name": "Zona Azul",
-          "timestamp": "",
-          "available": "100",
-          "total": 229,
-          "used": "200"
-        },
-        {
-          "name": "Zona Verde",
-          "timestamp": "",
-          "available": "100",
-          "total": 270,
-          "used": "200"
-        },
-        {
-          "name": "Zona Naranja",
-          "timestamp": "",
-          "available": "100",
-          "total": 269,
-          "used": "200"
-        },
-        {
-          "name": "Zona Amarilla",
-          "timestamp": "",
-          "available": "100",
-          "total": 341,
-          "used": "200"
-        },
-        {
-          "name": "Zona Morada",
-          "timestamp": "",
-          "available": "100",
-          "total": 446,
-          "used": "200"
-        }];
-
-    $scope.available = [200,100,123,234,109,187,99,102,189,212];*/
-
-
-    /*$scope.medicina = [
-      {v: "Medicina"},
-      {v: 412},
-      {v: $scope.available[0]},
-    ];
-    $scope.visitantes = [
-      {v: "visitantes"},
-      {v: 237},
-      {v: $scope.available[1]},
-    ];
-    $scope.cafeteria = [
-      {v: "Cafeteria"},
-      {v: 288},
-      {v: $scope.available[2]},
-    ];
-    $scope.aulas6 = [
-      {v: "Aulas vI/Residencias"},
-      {v: 230},
-      {v: $scope.available[3]},
-    ];
-    $scope.aulas5 = [
-      {v: "Aulas v/Ingenieria Civil"},
-      {v: 291},
-      {v: $scope.available[4]},
-    ];
-    $scope.za = [
-      {v: "Zona Azul"},
-      {v: 229},
-      {v: $scope.available[5]},
-    ];
-    $scope.zv = [
-      {v: "Zona verde"},
-      {v: 270},
-      {v: $scope.available[6]},
-    ];
-    $scope.zn = [
-      {v: "Zona Naranja"},
-      {v: 269},
-      {v: $scope.available[7]},
-    ];
-    $scope.zam = [
-      {v: "Zona Amarilla"},
-      {v: 341},
-      {v: $scope.available[8]},
-    ];
-    $scope.zm = [
-      {v: "Zona Morada"},
-      {v: 446},
-      {v: $scope.available[9]},
-    ];*/
-
     $scope.z1 = [
-      {v: "Aulas VI"},
+      {v: 'Aulas VI'},
       {v: 0},
       {v: 0},
     ];
     $scope.z2 = [
-      {v: "Aulas V"},
+      {v: 'Aulas V'},
       {v: 0},
       {v: 0},
     ];
     $scope.z3 = [
-      {v: "Medicina"},
+      {v: 'Medicina'},
       {v: 0},
       {v: 0},
     ];
     $scope.z4 = [
-      {v: "Visitantes"},
+      {v: 'Visitantes'},
       {v: 0},
       {v: 0},
     ];
     $scope.z5 = [
-      {v: "Cafeteria"},
+      {v: 'Cafeteria'},
       {v: 0},
       {v: 0},
     ];
     $scope.z6 = [
-      {v: "Zona Azul"},
+      {v: 'Zona Azul'},
       {v: 0},
       {v: 0},
     ];
     $scope.z7 = [
-      {v: "Zona Amarilla"},
+      {v: 'Zona Amarilla'},
       {v: 0},
       {v: 0},
     ];
     $scope.z8 = [
-      {v: " Zona Roja"},
+      {v: ' Zona Roja'},
       {v: 0},
       {v: 0},
     ];
     $scope.z9 = [
-      {v: "Zona Verde"},
+      {v: 'Zona Verde'},
       {v: 0},
       {v: 0},
     ];
     $scope.z10 = [
-      {v: "Zona Morada"},
+      {v: 'Zona Morada'},
       {v: 0},
       {v: 0},
     ];
 
     $scope.chartObject = {};
 
-    $scope.chartObject.type = "ColumnChart";
+    $scope.chartObject.type = 'ColumnChart';
 
-    $scope.chartObject.data = {"cols": [
-      {id: "t", label: "Topping", type: "string"},
-      {id: "s", label: "Available", type: "number"},
-      {id: "s", label: "Busy", type: "number"},
-      //{id: "s", label: "Car Pool", type: "number"},
-      //{id: "s", label: "Busy", type: "number"},
-      //{id: "s", label: "Wheel Chair", type: "number"}
+    $scope.chartObject.data = {'cols': [
+      {id: 't', label: 'Topping', type: 'string'},
+      {id: 's', label: 'Available', type: 'number'},
+      {id: 's', label: 'Busy', type: 'number'},
+      //{id: 's', label: 'Car Pool', type: 'number'},
+      //{id: 's', label: 'Busy', type: 'number'},
+      //{id: 's', label: 'Wheel Chair', type: 'number'}
 
-    ], "rows": [
+    ], 'rows': [
       {c: $scope.z1},
       {c: $scope.z2},
       {c: $scope.z3},
@@ -927,83 +800,83 @@ class MainController {
 
 
     $scope.p1 = [
-      {v: "Busy"},
+      {v: 'Busy'},
       {v: 0},
     ];
     $scope.p11 = [
-      {v: "Available"},
+      {v: 'Available'},
       {v: 0},
     ];
     $scope.p2 = [
-      {v: "Busy"},
+      {v: 'Busy'},
       {v: 0},
     ];
     $scope.p22 = [
-      {v: "Available"},
+      {v: 'Available'},
       {v: 0},
     ];
     $scope.p3 = [
-      {v: "Busy"},
+      {v: 'Busy'},
       {v: 0},
     ];
     $scope.p33 = [
-      {v: "Available"},
+      {v: 'Available'},
       {v: 0},
     ];
     $scope.p4 = [
-      {v: "Busy"},
+      {v: 'Busy'},
       {v: 0},
     ];
     $scope.p44 = [
-      {v: "Available"},
+      {v: 'Available'},
       {v: 0},
     ];
     $scope.p5 = [
-      {v: "Busy"},
+      {v: 'Busy'},
       {v: 0},
     ];
     $scope.p55 = [
-      {v: "Available"},
+      {v: 'Available'},
       {v: 0},
     ];
     $scope.p6 = [
-      {v: "Busy"},
+      {v: 'Busy'},
       {v: 0},
     ];
     $scope.p66 = [
-      {v: "Available"},
+      {v: 'Available'},
       {v: 0},
     ];
     $scope.p7 = [
-      {v: "Busy"},
+      {v: 'Busy'},
       {v: 0},
     ];
     $scope.p77 = [
-      {v: "Available"},
+      {v: 'Available'},
       {v: 0},
     ];
     $scope.p8 = [
-      {v: "Busy"},
+      {v: 'Busy'},
       {v: 0},
     ];
     $scope.p88 = [
-      {v: "Available"},
+      {v: 'Available'},
       {v: 0},
     ];
     $scope.p9 = [
-      {v: "Busy"},
+      {v: 'Busy'},
       {v: 0},
     ];
     $scope.p99 = [
-      {v: "Available"},
+      {v: 'Available'},
       {v: 0},
     ];
     $scope.p10 = [
-      {v: "Busy"},
+      {v: 'Busy'},
       {v: 0},
     ];
     $scope.p100 = [
-      {v: "Available"},
+      {v: 'Available'},
       {v: 0},
     ];
 
@@ -1013,15 +886,15 @@ class MainController {
 
     $scope.pie1 = {};
 
-    $scope.pie1.data = {"cols": [
-      {id: "t", label: "Topping", type: "string"},
-      {id: "s", label: "Slices", type: "number"}
-    ], "rows": [
+    $scope.pie1.data = {'cols': [
+      {id: 't', label: 'Topping', type: 'string'},
+      {id: 's', label: 'Slices', type: 'number'}
+    ], 'rows': [
       {c: $scope.p1},
       {c: $scope.p11}
     ]};
 
-    $scope.pie1.type = "PieChart";
+    $scope.pie1.type = 'PieChart';
     $scope.pie1.options = {
       'title': 'Available Spaces in Aulas VI',
       is3D: true,
@@ -1035,15 +908,15 @@ class MainController {
 
     $scope.pie2 = {};
 
-    $scope.pie2.data = {"cols": [
-      {id: "t", label: "Topping", type: "string"},
-      {id: "s", label: "Slices", type: "number"}
-    ], "rows": [
+    $scope.pie2.data = {'cols': [
+      {id: 't', label: 'Topping', type: 'string'},
+      {id: 's', label: 'Slices', type: 'number'}
+    ], 'rows': [
       {c: $scope.p2},
       {c: $scope.p22}
     ]};
 
-    $scope.pie2.type = "PieChart";
+    $scope.pie2.type = 'PieChart';
     $scope.pie2.options = {
       'title': 'Available Spaces in Aulas V',
       is3D: true,
@@ -1057,15 +930,15 @@ class MainController {
 
     $scope.pie3 = {};
 
-    $scope.pie3.data = {"cols": [
-      {id: "t", label: "Topping", type: "string"},
-      {id: "s", label: "Slices", type: "number"}
-    ], "rows": [
+    $scope.pie3.data = {'cols': [
+      {id: 't', label: 'Topping', type: 'string'},
+      {id: 's', label: 'Slices', type: 'number'}
+    ], 'rows': [
       {c: $scope.p3},
       {c: $scope.p33}
     ]};
 
-    $scope.pie3.type = "PieChart";
+    $scope.pie3.type = 'PieChart';
     $scope.pie3.options = {
       'title': 'Available Spaces in Medicina',
       is3D: true,
@@ -1079,15 +952,15 @@ class MainController {
 
     $scope.pie4 = {};
 
-    $scope.pie4.data = {"cols": [
-      {id: "t", label: "Topping", type: "string"},
-      {id: "s", label: "Slices", type: "number"}
-    ], "rows": [
+    $scope.pie4.data = {'cols': [
+      {id: 't', label: 'Topping', type: 'string'},
+      {id: 's', label: 'Slices', type: 'number'}
+    ], 'rows': [
       {c: $scope.p4},
       {c: $scope.p44}
     ]};
 
-    $scope.pie4.type = "PieChart";
+    $scope.pie4.type = 'PieChart';
     $scope.pie4.options = {
       'title': 'Available Spaces in Visitantes',
       is3D: true,
@@ -1101,15 +974,15 @@ class MainController {
 
     $scope.pie5 = {};
 
-    $scope.pie5.data = {"cols": [
-      {id: "t", label: "Topping", type: "string"},
-      {id: "s", label: "Slices", type: "number"}
-    ], "rows": [
+    $scope.pie5.data = {'cols': [
+      {id: 't', label: 'Topping', type: 'string'},
+      {id: 's', label: 'Slices', type: 'number'}
+    ], 'rows': [
       {c: $scope.p5},
       {c: $scope.p55}
     ]};
 
-    $scope.pie5.type = "PieChart";
+    $scope.pie5.type = 'PieChart';
     $scope.pie5.options = {
       'title': 'Available Spaces in Cafeteria',
       is3D: true,
@@ -1123,15 +996,15 @@ class MainController {
 
     $scope.pie6 = {};
 
-    $scope.pie6.data = {"cols": [
-      {id: "t", label: "Topping", type: "string"},
-      {id: "s", label: "Slices", type: "number"}
-    ], "rows": [
+    $scope.pie6.data = {'cols': [
+      {id: 't', label: 'Topping', type: 'string'},
+      {id: 's', label: 'Slices', type: 'number'}
+    ], 'rows': [
       {c: $scope.p6},
       {c: $scope.p66}
     ]};
 
-    $scope.pie6.type = "PieChart";
+    $scope.pie6.type = 'PieChart';
     $scope.pie6.options = {
       'title': 'Available Spaces in Zona Azul',
       is3D: true,
@@ -1144,15 +1017,15 @@ class MainController {
     /*************************/
     $scope.pie7 = {};
 
-    $scope.pie7.data = {"cols": [
-      {id: "t", label: "Topping", type: "string"},
-      {id: "s", label: "Slices", type: "number"}
-    ], "rows": [
+    $scope.pie7.data = {'cols': [
+      {id: 't', label: 'Topping', type: 'string'},
+      {id: 's', label: 'Slices', type: 'number'}
+    ], 'rows': [
       {c: $scope.p7},
       {c: $scope.p77}
     ]};
 
-    $scope.pie7.type = "PieChart";
+    $scope.pie7.type = 'PieChart';
     $scope.pie7.options = {
       'title': 'Available Spaces in Zona Amarilla',
       is3D: true,
@@ -1165,15 +1038,15 @@ class MainController {
     /*************************/
     $scope.pie8 = {};
 
-    $scope.pie8.data = {"cols": [
-      {id: "t", label: "Topping", type: "string"},
-      {id: "s", label: "Slices", type: "number"}
-    ], "rows": [
+    $scope.pie8.data = {'cols': [
+      {id: 't', label: 'Topping', type: 'string'},
+      {id: 's', label: 'Slices', type: 'number'}
+    ], 'rows': [
       {c: $scope.p8},
       {c: $scope.p88}
     ]};
 
-    $scope.pie8.type = "PieChart";
+    $scope.pie8.type = 'PieChart';
     $scope.pie8.options = {
       'title': 'Available Spaces in Zona Roja',
       is3D: true,
@@ -1186,15 +1059,15 @@ class MainController {
     /*************************/
     $scope.pie9 = {};
 
-    $scope.pie9.data = {"cols": [
-      {id: "t", label: "Topping", type: "string"},
-      {id: "s", label: "Slices", type: "number"}
-    ], "rows": [
+    $scope.pie9.data = {'cols': [
+      {id: 't', label: 'Topping', type: 'string'},
+      {id: 's', label: 'Slices', type: 'number'}
+    ], 'rows': [
       {c: $scope.p9},
       {c: $scope.p99}
     ]};
 
-    $scope.pie9.type = "PieChart";
+    $scope.pie9.type = 'PieChart';
     $scope.pie9.options = {
       'title': 'Available Spaces in Zona Verde',
       is3D: true,
@@ -1207,15 +1080,15 @@ class MainController {
     /*************************/
     $scope.pie10 = {};
 
-    $scope.pie10.data = {"cols": [
-      {id: "t", label: "Topping", type: "string"},
-      {id: "s", label: "Slices", type: "number"}
-    ], "rows": [
+    $scope.pie10.data = {'cols': [
+      {id: 't', label: 'Topping', type: 'string'},
+      {id: 's', label: 'Slices', type: 'number'}
+    ], 'rows': [
       {c: $scope.p10},
       {c: $scope.p100}
     ]};
 
-    $scope.pie10.type = "PieChart";
+    $scope.pie10.type = 'PieChart';
     $scope.pie10.options = {
       'title': 'Available Spaces in Zona Morada',
       is3D: true,
@@ -1226,117 +1099,6 @@ class MainController {
     };
 
     /*************************/
-
-    /*$scope.chartObject.data = {"cols": [
-      {id: "t", label: "Topping", type: "string"},
-      {id: "s", label: "Total Spaces", type: "number"},
-      {id: "s", label: "Available", type: "number"},
-      {id: "s", label: "Car Pool", type: "number"},
-      {id: "s", label: "Busy", type: "number"},
-      {id: "s", label: "Wheel Chair", type: "number"}
-
-    ], "rows": [
-      {c: $scope.medicina},
-      {c: $scope.visitantes},
-      {c: $scope.cafeteria },
-      {c: $scope.aulas6 },
-      {c: $scope.aulas5},
-      {c: $scope.za},
-      {c: $scope.zv},
-      {c: $scope.zn},
-      {c: $scope.zam},
-      {c: $scope.zm},
-    ]};*/
-
-    /*//Aulas VI
-     $scope.coordAulas6 = [
-     { latitude: 20.732746, longitude: -103.453703 },
-     { latitude: 20.732626, longitude: -103.453059 },
-     { latitude: 20.733308, longitude: -103.452909 },
-     { latitude: 20.733409, longitude: -103.453542 }
-     ];
-
-     //Aulas V
-     $scope.coordAulas5 = [
-     { latitude: 20.736650, longitude: -103.453102 },
-     { latitude: 20.736539, longitude: -103.452319 },
-     { latitude: 20.735867, longitude: -103.452415 },
-     { latitude: 20.735977, longitude: -103.453209 }
-     ];
-
-     //Medicina
-     $scope.coordMedicina = [
-     { latitude: 20.734101, longitude: -103.457801 },
-     { latitude: 20.732485, longitude: -103.458005 },
-     { latitude: 20.732415, longitude: -103.457587 },
-     { latitude: 20.732596, longitude: -103.457404 },
-     { latitude: 20.733077, longitude: -103.457329 },
-     { latitude: 20.733088, longitude: -103.456932 },
-     { latitude: 20.734011, longitude: -103.456932 }
-     ];
-
-     //Visitantes
-     $scope.coordVisitantes = [
-     { latitude: 20.732917, longitude: -103.457201 },
-     { latitude: 20.732907, longitude: -103.456471 },
-     { latitude: 20.732295, longitude: -103.456053 },
-     { latitude: 20.732215, longitude: -103.456063 },
-     { latitude: 20.732305, longitude: -103.457083 },
-     { latitude: 20.732536, longitude: -103.457254 }
-     ];
-
-     //Cafeteria/Centro de congresos
-     $scope.coordCafeteria = [
-     { latitude: 20.732465, longitude: -103.455967 },
-     { latitude: 20.732465, longitude: -103.455645 },
-     { latitude: 20.732867, longitude: -103.455076 },
-     { latitude: 20.732817, longitude: -103.454690 },
-     { latitude: 20.732355, longitude: -103.454701 },
-     { latitude: 20.731964, longitude: -103.455173 },
-     { latitude: 20.732024, longitude: -103.455774 }
-     ];
-
-     //Zona Azul
-     $scope.coordAzul = [
-     { latitude: 20.733298, longitude: -103.454390 },
-     { latitude: 20.733248, longitude: -103.453778 },
-     { latitude: 20.732114, longitude: -103.454003 },
-     { latitude: 20.732194, longitude: -103.454465 }
-     ];
-
-     //Zona Amarilla
-     $scope.coordAmarilla = [
-     { latitude: 20.734733, longitude: -103.454239 },
-     { latitude: 20.733399, longitude: -103.454368 },
-     { latitude: 20.733348, longitude: -103.453746 },
-     { latitude: 20.734663, longitude: -103.453521 }
-     ];
-
-     //Zona Roja
-     $scope.coordRoja = [
-     { latitude: 20.735245, longitude: -103.454196 },
-     { latitude: 20.735205, longitude: -103.453478 },
-     { latitude: 20.734733, longitude: -103.453531 },
-     { latitude: 20.734803, longitude: -103.454229 }
-     ];
-
-     //Zona Verde
-     $scope.coordVerde = [
-     { latitude: 20.735335, longitude: -103.454186 },
-     { latitude: 20.736148, longitude: -103.454121 },
-     { latitude: 20.736098, longitude: -103.453327 },
-     { latitude: 20.735295, longitude: -103.453445 }
-     ];
-
-     //Zona Morada
-     $scope.coordMorada = [
-     { latitude: 20.737462, longitude: -103.453521 },
-     { latitude: 20.737121, longitude: -103.453510 },
-     { latitude: 20.737051, longitude: -103.453166 },
-     { latitude: 20.736258, longitude: -103.453317 },
-     { latitude: 20.736298, longitude: -103.454089 },
-     { latitude: 20.737543, longitude: -103.453950 }
-     ];*/
 
     $scope.$on('$destroy', function() {
       socket.unsyncUpdates('thing');
